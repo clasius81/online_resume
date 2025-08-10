@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jane Doe — Resume</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;}
+    body{max-width:900px;margin:32px auto;padding:24px;line-height:1.45;color:#111}
+    header{display:flex;align-items:center;gap:18px}
+    .avatar{width:88px;height:88px;border-radius:10px;object-fit:cover}
+    h1{margin:0;font-size:1.6rem}
+    .meta{color:#444}
+    section{margin-top:18px}
+    .two-col{display:grid;grid-template-columns:1fr 240px;gap:20px}
+    .card{padding:12px;border-radius:10px;background:#f8f8f8}
+    a.button{display:inline-block;margin-top:8px;padding:8px 12px;border-radius:8px;text-decoration:none;border:1px solid #ddd}
+    @media(max-width:700px){.two-col{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <!-- optional: add avatar.png to repo and uncomment <img> -->
+    <!-- <img src="avatar.png" class="avatar" alt="Jane Doe"> -->
+    <div>
+      <h1>Jane Doe</h1>
+      <div class="meta">Frontend Engineer — jane@example.com • (555) 555-5555 • San Diego, CA</div>
+      <a class="button" href="resume.pdf" download>Download PDF</a>
+    </div>
+  </header>
+
+  <section class="two-col">
+    <div>
+      <h2>Experience</h2>
+      <div class="card">
+        <strong>Senior Frontend Engineer</strong> — Acme Co<br/>
+        <small class="meta">2021 — Present</small>
+        <p>Built accessible React components, improved performance, shipped features used by 100k+ users.</p>
+      </div>
+
+      <h2>Education</h2>
+      <div class="card">
+        <strong>BS Computer Science</strong> — University X, 2016
+      </div>
+
+      <h2>Projects & Links</h2>
+      <div class="card">
+        <ul>
+          <li><a href="https://github.com/your-username">GitHub</a></li>
+          <li><a href="https://your-portfolio.example.com">Portfolio</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <aside>
+      <h3>Skills</h3>
+      <div class="card">
+        JavaScript · React · HTML · CSS · Accessibility
+      </div>
+
+      <h3>Availability</h3>
+      <div class="card">Open to remote roles</div>
+    </aside>
+  </section>
+</body>
+</html>
